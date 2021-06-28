@@ -1,0 +1,33 @@
+{
+    "shelters": [
+  
+    {
+        "organization": "Lifelong Friends",
+        "id": 1,
+        "name": "Moki Rose",
+        "age": 1,
+        "adoptable": true,
+        "personality": "active, palyful, affectionate",
+        "physical": "brown tiger-striped, short-haired, stocky"
+    },
+
+    {
+        "organization": "Lifelong Friends",
+        "id": 2,
+        "name": "Paco",
+        "age": 8,
+        "adoptable": true,
+        "personality": "quiet, loves people, affectionate",
+        "physical": "black, short-haired, tuxedo"
+    },
+
+    {
+        "organization": "Lifelong Friends",
+        "id": 3,
+        "name": "Frankie",
+        "age": 5,
+        "personality": "goofy, playful, active",
+        "physical": "brown, short-haired, striped tabby"
+    }
+]
+}
