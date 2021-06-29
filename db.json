@@ -1,13 +1,12 @@
 {
-    "shelters": [
-  
+    "cats": [
     {
         "organization": "Lifelong Friends",
         "id": 1,
         "name": "Moki Rose",
         "age": 1,
         "adoptable": true,
-        "personality": "active, palyful, affectionate",
+        "personality": "active, playful, affectionate",
         "physical": "brown tiger-striped, short-haired, stocky"
     },
 
