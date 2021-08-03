@@ -1,1 +1,8 @@
-body { background-color: pink; }
+body { 
+  background-color: pink; }
+
+img {
+  width: 300px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}

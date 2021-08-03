@@ -1,26 +1,21 @@
 console.log("👀")
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, options);
-  });
+
 //////// PUPPET STRINGZ
 
 const DATABASE = []
 const puppetStrings = document.querySelector("#puppet-strings")
 
-
-
-
 const fetchOneCatImage = () => {
-
     fetch('https://thatcopy.pw/catapi/rest/')
     .then(response => response.json())
-    .then( (catImage)=>{console.log(catImage)
+    .then( (catImage)=>{//console.log(catImage)
     
-        DATABASE.push(catImage)
-            console.log(DATABASE)
+    DATABASE.push(catImage)
+            //console.log(DATABASE)
 
-        const randomCat = document.createElement("h4")
+    const randomCat = document.createElement("img")
+    //console.log(randomCat)
+    let puppetStrings = document.querySelector("#puppet-strings")
         randomCat.src = catImage.url
         puppetStrings.append(randomCat)
     })
@@ -35,14 +30,9 @@ const init = () => {
     //     console.log(changeLoadingImage)  //
     //     changeLoadingImage.src = "https://static3.depositphotos.com/1000958/117/i/600/depositphotos_1178129-stock-photo-kitten.jpg"
       
-       for(i = 0; i < 10; i++){
+       for(i = 0; i < 10; i++) {
+    fetchOneCatImage()    
+        }      
+}
 
-fetchOneCatImage()    
-
-       }      
-
- }
-
-
-
-//document.addEventListener("DOMContentLoaded", (event) =>{ init() })
+document.addEventListener("DOMContentLoaded", (event) =>{ init() })
