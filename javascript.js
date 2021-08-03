@@ -1,82 +1,48 @@
+console.log("👀")
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+  });
+//////// PUPPET STRINGZ
+
+const DATABASE = []
+const puppetStrings = document.querySelector("#puppet-strings")
 
 
-const catsDiv = () => document.getElementById('cats');
 
-const cats = [
-    {
-    organization: "Lifelong Friends", 
-    id: "1",
-    name: "Moki Rose",
-    age: "1",
-    adoptable: "yes",
-    personality: "active, playful, affectionate",
-    physical: "brown tiger-striped, short-haired, stocky"
-    },
 
-    {
-    organization: "Lifelong Friends", 
-    id: "2",
-    name: "Paco",
-    age: "8",
-    adoptable: "yes",
-    personality: "quiet, loves people, affectionate",
-    physical: "black, short-haired, tuxedo"
-    },
+const fetchOneCatImage = () => {
 
-    {
-    organization: "Lifelong Friends", 
-    id: "3",
-    name: "Frankie",
-    age: "5",
-    adoptable: "yes",
-    personality: "goofy, playful, active",
-    physical: "brown, short-haired, striped tabby"
-    },
-];
+    fetch('https://thatcopy.pw/catapi/rest/')
+    .then(response => response.json())
+    .then( (catImage)=>{console.log(catImage)
+    
+        DATABASE.push(catImage)
+            console.log(DATABASE)
 
-const loadCats = cats => {
-//     organization: "Lifelong Friends", 
-//     id: "3",
-//     name: "Frankie",
-//     age: "5",
-//     adoptable: "yes",
-//     personality: "goofy, playful, active",
-//     physical: "brown, short-haired, striped tabby"//what do I want to do? iterate on our cats and for every
-// //cat we want to show name and photo
-cats.forEach(cat => loadCats(cats))
-
-const div = document.createElement("div");
-const cat2 = document.createElement("h4");
-const cat3 = document.createElement("h4");
-
-cat1.innerText = cat.organization;
+        const randomCat = document.createElement("h4")
+        randomCat.src = catImage.url
+        puppetStrings.append(randomCat)
+    })
 
 }
+const init = () => {  
+    // const changeTheH1 = document.querySelector("h1")
+    //     console.log(changeTheH1)  
+    //     changeTheH1.textContent = "MEET YOUR NEW BEST FRIEND"
 
-document.addEventListener("DOMContentLoaded", (e) => {
-    loadCats();
+    // const changeLoadingImage = document.querySelector("img")
+    //     console.log(changeLoadingImage)  //
+    //     changeLoadingImage.src = "https://static3.depositphotos.com/1000958/117/i/600/depositphotos_1178129-stock-photo-kitten.jpg"
+      
+       for(i = 0; i < 10; i++){
+
+fetchOneCatImage()    
+
+       }      
+
+ }
 
 
 
-
-
-});// <div id="header">
-    //     <h1 id="banner">CatLOVE!</h1>
-    //     <h2 id="subtitle">Save the Kitties! Adopt, Donate or Volunteer!</h2>
-    // </div>
-    // <div id="currentcats">
-    //     <h2 id="adoptable">Meet the Kitties!</h2>
-    // </div>
-    // <div id="pictures">
-    //     <h2>Available Now!</h2>
-    //     <h4 id="furbabies">These furbabies are looking for a new home!</h4>
-    //     <hr>
-    //     <img src="http://lifelongfriends.org/moki-rose-profile.jpg" alt="Moki">
-    //     <h4 id = "cat-1">Moki Rose</h4>
-    //     <hr>
-    //     <img src="http://lifelongfriends.org/paco-profile.jpg" alt="Paco">
-    //     <h4 id = "cat-2">Paco</h4>
-    //     <hr>
-    //     <img src="http://lifelongfriends.org/cats/frankie-profile-2021.jpg" alt="frankie">
-    //     <h4 id = "cat-3">Frankie</h4>
-  //  </div>
+//document.addEventListener("DOMContentLoaded", (event) =>{ init() })
