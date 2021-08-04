@@ -34,5 +34,19 @@ const init = () => {
     fetchOneCatImage()    
         }      
 }
+// create a cat card
 
+
+catCard = () => {
+    const div = document.createElement('div');
+    const h3 = document.createElement('h3');
+    const catID = document.createElement('p');
+    const catName = document.createElement('p');
+    const catAge = document.createElement('p');
+    const catDesc = document.createElement('p'); 
+    const catLikes = document.createElement('btn');
+    const catShelter = document.createElement('p');
+
+    
+}
 document.addEventListener("DOMContentLoaded", (event) =>{ init() })
