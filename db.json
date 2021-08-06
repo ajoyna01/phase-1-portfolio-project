@@ -1,32 +1,33 @@
 {
     "cats": [
     {
-        "organization": "Lifelong Friends",
+        "shelter": "Lifelong Friends",
         "id": 1,
+        "loves": 25,
         "name": "Moki Rose",
         "age": 1,
         "adoptable": true,
-        "personality": "active, playful, affectionate",
-        "physical": "brown tiger-striped, short-haired, stocky"
+        "description": "Moki Rose is a classic white, short-haired kitten with a little pink nose. She is curious and affectionate. Don't turn your back though because behind that sweet face hides a cold-blooded killer."
     },
 
     {
-        "organization": "Lifelong Friends",
+        "shelter": "Lifelong Friends",        
         "id": 2,
+        "loves": 15,
         "name": "Paco",
         "age": 8,
         "adoptable": true,
-        "personality": "quiet, loves people, affectionate",
-        "physical": "black, short-haired, tuxedo"
+        "description": "black, short-haired, tuxedo"
     },
 
     {
-        "organization": "Lifelong Friends",
+        "shelter": "Lifelong Friends",        
         "id": 3,
+        "loves": 23,
         "name": "Frankie",
         "age": 5,
-        "personality": "goofy, playful, active",
-        "physical": "brown, short-haired, striped tabby"
+        "adoptable": true,
+        "description": "brown, short-haired, striped tabby"
     }
 ]
 }

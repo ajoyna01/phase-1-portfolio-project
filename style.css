@@ -1,15 +1,89 @@
 body { 
-  background-color: pink; 
+  background-color: blanchedalmond; 
   font-family: 'WindSong', cursive;
 }
-
+#header {
+  background-image: url("https://thumbs.dreamstime.com/z/grungy-antique-vintage-floral-wallpaper-collage-background-ephemera-86348444.jpg");
+}
+ 
+#banner {
+  background-color: black;
+  height: 200px;
+  margin-left: 0%;
+  margin-right: 0%;
+  color: aliceblue;
+}
+#options {
+  text-align: center;
+  font-size: 50px;
+  color: navy;
+}
+#adopt {
+  text-align: center;
+  text-emphasis-color: white;
+  color: indigo;
+  font-size: 35px;
+}
+#donate {
+  text-align: center;
+  text-shadow: white;
+  color: indigo;
+  font-size: 35px;
+}
+#volunteer {
+  text-align: center;
+  text-emphasis-color: white;
+  color: indigo;
+  font-size: 35px;
+}
+#plea {
+  text-align: center;
+  color: darkslateblue;
+}
 img {
-  width: 300px;
-  margin: auto;
+  width: 520px;
+  margin-right: auto;
   border: 3px solid #73AD21;
 }
-div.card {
-  height: 200px;
-  width: 50%;
+.card {
+  height: 100px;
+  width: 75%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+}
+#cat-title {
+  font-size: 50px;
+}
+#cat-forms {
+  background-color: darkgray;
+  height: 300px;
+  width: 350px;
+  position:relative
+}
+#furbabies {
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem 0;
+  max-width: calc(100vw - 2rem);
 }
 
+#furbabies img {
+  flex: 0 1 auto;
+  height: 150px;
+  width: 175px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+#furbabies img:last-child {
+  margin-right: 0;
+}
+body {
+  padding-bottom: 300px;
+}
+/* .card-title grey-text text-darken-4 {
+
+} */

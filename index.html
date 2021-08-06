@@ -7,50 +7,63 @@
     <title>Cat Adoption</title>
     <script type="text/javascript" src="javascript.js"></script>
     <link rel="stylesheet" href="style.css"></link>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet"><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
 </head>
 <body>
     <nav class="#607d8b blue-grey">
+    
     <div class="nav-wrapper container">
-      <a href="#" class="brand-logo center">CatCakes</a>
+      <a href="#" class="brand-logo left">CatCakes</a>
+      <img src="">
       <ul id="nav-mobile" class="left hide-on-med-and-down">
       </ul>
     </div>
   </nav>
   <div class="container">
+    <div id="block-header"></div>
+    <h1 id="banner">Meet...Your New Best Friend!</h1>
+
     <div id="header">
-        <h1 id="banner">Meet...Your New Best Friend!</h1>
             <img src="https://thumbs.dreamstime.com/b/four-cute-cats-20650677.jpg">
-        <h2 id="subtitle">Save the Kitties!</h2>
+        <h1 id="subtitle">Save the Kitties!</h1>
+          <ul id="options">Get Involved!</ul>
+            <li id="adopt">Adopt</li>
+            <li id="donate">Donate</li>
+            <li id="volunteer">Volunteer!</li>
     </div>
-    <div id="currentcats">
-        <h3 id="OPTIONS"> Adopt, Donate or Volunteer!</h3>
-    </div>
+  
     <div id="cats-to-adopt">
-        <h2>needz new homz</h2>
-        <h4 id="furbabies">These furbabies are looking for a new home!</h4>
-       
+        <h2 id="plea">we needz new homz</h2>
+        <h4 id="furbabies" class="furbabies"></h4>
+         
     </div>
-    <div id="puppet-strings"> Put objects here
+    <div class="catforms" id="cat-forms">
         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
+              <span id="cat-title" class="card-title activator grey-text text-darken-4">Cat Name<i class="material-icons right">more_info</i></span>
+              <h4 id="show-likes">Loves:</h4>
+              <button id="like-button">
+                <i class="material-icons pets">add</i>
+                LOVE</button>
+
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">About...<i class="material-icons right">close</i></span>
+              <p id="more-info"></p>
             </div>
           </div>  
+          <div id="footer">
+
+          </div>
 
     </div>
 </div>
